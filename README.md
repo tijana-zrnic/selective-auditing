@@ -41,8 +41,7 @@ The sweep runs in parallel on all available cores and takes a few minutes on a l
 `algorithms.py` implements
 * `additive_thresholding` — additive thresholding, equations (1)–(2);
 * `additive_thresholding_calibrated` — additive thresholding with confidence calibration, Algorithm 1;
-* `optimally_efficient` — optimally efficient selective auditing, Algorithm 2. `E_max` caps the dual state $E_t$ (Appendix C); `E_max=None` gives the uncapped method;
-* `oracle` — the oracle threshold baseline.
+* `optimally_efficient` — optimally efficient selective auditing, Algorithm 2.
 
 Each takes a stream of confidences and error indicators and returns the realized error rate and the fraction of audit effort saved:
 ```python
